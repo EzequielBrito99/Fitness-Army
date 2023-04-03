@@ -9,7 +9,7 @@ const Navbar = () => {
   }
 
   const [navStatus, setNavStatus] = useState(initialStatus);
-  const [searchStatus, setSearchStatus] = useState(initialStatus);
+  const [searchStatus, setSearchStatus] = useState(false);
 
   const handleNavStatus = () => {
     if (window.screen.width < 576) {
@@ -45,7 +45,7 @@ const Navbar = () => {
         </span>
       </ul>
       <i className='icono fa fa-search' onClick={handleSearchStatus}></i>
-      <div className={"nav-search position-absolute bg-light top-0 start-0 w-100 d-flex justify-content-md-end align-items-baseline py-4 px-2 " + (!searchStatus&&'search-close')}>
+      <div className={"nav-search position-absolute bg-white top-0 start-0 w-100 d-flex justify-content-md-end align-items-baseline py-4 px-2 " + (!searchStatus&&'search-close')}>
         <input type="search" name="search" id="search-input" className='flex-grow-1 flex-md-grow-0 w-25' />
         <i className='icono fa fa-search'></i>
         <i className='icono fa fa-close' onClick={handleSearchStatus}></i>
