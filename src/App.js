@@ -1,5 +1,6 @@
 import React from 'react'
 import { HashRouter, Routes, Route } from 'react-router-dom'
+import Footer from './components/Footer'
 import HomeScreen from './components/Home/HomeScreen'
 import Navbar from './components/Navbar'
 
@@ -12,6 +13,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<HomeScreen />} ></Route>
         </Routes>
+        <Footer/>
     </HashRouter>
     </div>
   )

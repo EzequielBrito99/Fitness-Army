@@ -17,7 +17,6 @@ const HomeScreen = () => {
           ))
         }
       </div>
-      <hr className='dropdown-divider' />
     </div>
   )
 }
