@@ -73,6 +73,7 @@
 }
 
 .nav-search{
+    z-index: 1001;
     transition: transform .6s ease;
     -webkit-transition: transform .6s ease;
     -moz-transition: transform .6s ease;
@@ -135,5 +136,10 @@
     }
     .nav-item:hover{
         color: rgba(0, 0, 0, .7);
+    }
+
+    .nav-search{
+        position: static;
+        width: auto;
     }
 }
