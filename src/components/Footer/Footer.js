@@ -1,5 +1,5 @@
 import React from 'react'
-import { brands } from '../data/data'
+import { brands } from '../../data/data'
 import Brand from './Brand'
 import Promo from './Promo'
 
@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="d-flex flex-column flex-md-row align-items-center align-items-md-end justify-content-between">
         <div>
           <span>Suscribe to our email</span>
-          <div class="footer-email-wrapper input-group my-2">
+          <div className="footer-email-wrapper input-group my-2">
             <input id='email' type="email" placeholder='Email' className='form-control' aria-describedby='email' />
             <span id='email'><i className='icono fa fa-arrow-right'></i></span>
           </div>

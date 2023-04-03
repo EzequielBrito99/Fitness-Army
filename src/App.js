@@ -1,6 +1,7 @@
 import React from 'react'
 import { HashRouter, Routes, Route } from 'react-router-dom'
-import Footer from './components/Footer'
+import Contact from './components/Contact'
+import Footer from './components/Footer/Footer'
 import HomeScreen from './components/Home/HomeScreen'
 import Navbar from './components/Navbar'
 
@@ -12,6 +13,7 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path='/' element={<HomeScreen />} ></Route>
+          <Route path='/contact' element={<Contact/>} ></Route>
         </Routes>
         <Footer/>
     </HashRouter>
