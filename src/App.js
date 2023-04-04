@@ -20,6 +20,7 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path='/' element={<HomeScreen setActiveProduct={setActiveProduct}/>} ></Route>
+          <Route path='/Fitness-Army' element={<HomeScreen setActiveProduct={setActiveProduct}/>} ></Route>
           <Route path='/catalog' element={<CatalogScreen setActiveProduct={setActiveProduct}/>} ></Route>
           <Route path='/product' element={<ProductScreen activeProduct={activeProduct}/>} ></Route>
           <Route path='/cart' element={<CartScreen />} ></Route>

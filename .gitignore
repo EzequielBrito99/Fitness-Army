@@ -10,6 +10,7 @@
 
 # production
 /build
+/Fitness Army
 
 # misc
 .DS_Store
