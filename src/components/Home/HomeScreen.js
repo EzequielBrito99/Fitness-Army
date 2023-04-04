@@ -3,7 +3,7 @@ import Banner from './Banner'
 import Products from '../Catalog/Products'
 import { products } from '../../data/data'
 
-const HomeScreen = () => {
+const HomeScreen = ({setActiveProduct}) => {
   return (
     <div>
       <Banner />
@@ -12,7 +12,7 @@ const HomeScreen = () => {
         {
           products.map((e, i) => (
             <div key={i} className="col-6 col-md-3">
-              <Products urlImg={e.img} desc={e.desc} precio={e.precio} />
+              <Products urlImg={e.img} desc={e.desc} precio={e.precio} setActiveProduct={setActiveProduct} currentProduct={e} />
             </div>
           ))
         }

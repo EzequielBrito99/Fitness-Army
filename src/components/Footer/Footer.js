@@ -14,7 +14,7 @@ const Footer = () => {
         <div>
           <span>Suscribe to our email</span>
           <div className="footer-email-wrapper input-group my-2">
-            <input id='email' type="email" placeholder='Email' className='form-control' aria-describedby='email' />
+            <input id='email' type="email" placeholder='Email' className='form-control' aria-describedby='email' autoComplete='off' />
             <span id='email'><i className='icono fa fa-arrow-right'></i></span>
           </div>
         </div>
@@ -32,7 +32,7 @@ const Footer = () => {
         }
       </div>
       <p className='copyright text-center text-muted mt-3'>
-        @2023 Fitness Army | Powered by Ezequiel Brito
+        @2023 Fitness Army | Powered by <a className='text-muted' href="https://wa.me/message/ST66CS7X7BHZM1">Ezequiel Brito</a>
       </p>
     </div>
   )

@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
   let initialStatus = false;
+  const navigate = useNavigate();
 
   if (window.screen.width > 576) {
     initialStatus = true
@@ -19,6 +20,10 @@ const Navbar = () => {
 
   const handleSearchStatus = () => {
       setSearchStatus(!searchStatus);
+  };
+
+  const handleShoping = () => {
+    navigate('/cart');
   };
 
   return (
@@ -50,7 +55,7 @@ const Navbar = () => {
         <i className='icono fa fa-search'></i>
         <i className='icono fa fa-close' onClick={handleSearchStatus}></i>
       </div>
-      <i className='icono fa fa-shopping-bag'></i>
+      <i onClick={handleShoping} className='icono fa fa-shopping-bag'></i>
     </div>
   )
 }
